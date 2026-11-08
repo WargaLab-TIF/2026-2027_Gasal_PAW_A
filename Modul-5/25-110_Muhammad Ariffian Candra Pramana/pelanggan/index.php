@@ -2,7 +2,7 @@
 include '../components/html_temp.php';
 require '../route.php';
 
-$pelanggan = $DBH->prepare("SELECT * FROM pelanggan");
+$pelanggan = $DBH->prepare("SELECT * FROM pelanggan WHERE nama LIKE 'Ahmad%'");
 $pelanggan->execute();
 $data = $pelanggan->fetchAll();
 ?>
