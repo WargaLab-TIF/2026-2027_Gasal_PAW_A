@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        form {
+            max-width: 550px;
+            padding: 15px;
+            border: 1px solid #999;
+            background-color: #e8e7fb;
+        }
+
+        fieldset {
+            border: 1px solid #999;
+        }
+
+        .field {
+            display: grid;
+            grid-template-columns: 140px 1fr;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 8px;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        textarea,
+        select {
+            box-sizing: border-box;
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Register</h1>
+
+    <form name="myForm" action="processData_form.php" method="POST">
+        <fieldset>
+            <legend>Person Details</legend>
+
+            <div class="field">
+                <label for="surname">Surname</label>
+                <input type="text" id="surname" name="surname" size="31">
+            </div>
+
+            <div class="field">
+                <label for="email">Email address</label>
+                <input type="text" id="email" name="email" size="31">
+            </div>
+
+            <div class="field">
+                <label for="passwd">Password</label>
+                <input type="password" id="passwd" name="passwd" size="31">
+            </div>
+
+            <div class="field">
+                <label for="address">Street Address</label>
+                <textarea id="address" name="address"
+                          rows="3" cols="22"></textarea>
+            </div>
+
+            <div class="field">
+                <label for="state">State</label>
+                <select id="state" name="state">
+                    <option value="-1" selected>[choose your state]</option>
+                    <option value="1">Australian Capital Territory</option>
+                    <option value="2">Queensland</option>
+                    <option value="3">Victoria</option>
+                    <option value="4">New South Wales</option>
+                    <option value="5">Tasmania</option>
+                    <option value="6">South Australia</option>
+                    <option value="7">Western Australia</option>
+                    <option value="8">Northern Territory</option>
+                </select>
+            </div>
+
+            <input type="hidden" name="country" value="Australia">
+
+            <div class="field">
+                <label>Gender</label>
+                <div>
+                    <label>
+                        <input type="radio" name="sex" value="male"> Male
+                    </label>
+
+                    <label>
+                        <input type="radio" name="sex" value="female"> Female
+                    </label>
+                </div>
+            </div>
+
+            <div class="field">
+                <label for="vegetarian">Vegetarian?</label>
+                <input type="checkbox" id="vegetarian" name="vegetarian">
+            </div>
+
+            <div class="field">
+                <label></label>
+                <div>
+                    <input type="submit" name="submit" value="Submit">
+                    <input type="reset" name="reset" value="Reset">
+                </div>
+            </div>
+
+        </fieldset>
+    </form>
+
+</body>
+</html>
