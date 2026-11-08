@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+body > a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+h2 {
+    margin-top: 25px;
+    color: #1f2937;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid grey; !important;
+    padding: 8px 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #2563eb;
+    color: #fff;
+}
+
+tr:nth-child(even) td {
+    background-color: #f9fafb;
+}
+
+tr:hover td {
+    background-color: #e8e8e8;
+}
+
+td a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+form {
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #d1d5db;
+    max-width: 400px;
+}
+
+select, input[type="number"] {
+    padding: 6px;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: green;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn { display: inline-block; 
+       padding: 6px 12px; 
+       border-radius: 4px;
+       color: white;  
+       text-decoration: none;
+       font-size: 13px;}
+.btn-transaksi  { background: #2563eb;}
+.btn-detail { background: blueviolet;}
+.btn-hps  { background: red; }
+.btn:hover  { opacity: .80; }
+
+button:hover {
+     opacity: .65;
+}
+
+p {
+    margin: 6px 0;
+}
