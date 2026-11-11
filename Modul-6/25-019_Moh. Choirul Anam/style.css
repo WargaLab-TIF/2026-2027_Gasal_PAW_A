@@ -1,0 +1,21 @@
+body { font-family: Arial, sans-serif; margin: 0; background: #f4f6f8; color: #222; }
+nav { background: #1f4e79; padding: 12px 24px; }
+nav a { color: #fff; margin-right: 20px; text-decoration: none; font-weight: bold; }
+.wrap { max-width: 960px; margin: 24px auto; padding: 0 16px; }
+table { border-collapse: collapse; width: 100%; background: #fff; margin-bottom: 20px; }
+th, td { border: 1px solid #cfd6dd; padding: 8px 10px; text-align: left; }
+th { background: #dce6f1; }
+td.num, th.num { text-align: right; }
+.panel { background: #fff; border: 1px solid #cfd6dd; padding: 14px 18px; margin-bottom: 20px; }
+.panel dl { display: grid; grid-template-columns: 160px 1fr; margin: 0; }
+.panel dt { font-weight: bold; padding: 4px 0; }
+.panel dd { margin: 0; padding: 4px 0; }
+.btn { display: inline-block; padding: 6px 12px; border: 0; border-radius: 4px;
+       background: #1f4e79; color: #fff; cursor: pointer; text-decoration: none; }
+.btn.danger { background: #c0392b; }
+.btn.gray { background: #6c7a89; }
+.alert { padding: 10px 14px; margin-bottom: 16px; border-radius: 4px; }
+.alert.success { background: #d4edda; color: #155724; }
+.alert.error { background: #f8d7da; color: #721c24; }
+form.inline label { display: inline-block; margin-right: 12px; }
+select, input { padding: 6px; }
