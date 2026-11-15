@@ -1,7 +1,7 @@
 <?php
 require_once "route.php";
 
-$transaksi_id = isset($_GET['id']) ? $_GET['id'] : 1;
+$transaksi_id = isset($_GET['id']) ? $_GET['id'] : 2;
 
 if (isset($_POST['simpan-detail'])) {
     $barang_id = $_POST['barang_id'];

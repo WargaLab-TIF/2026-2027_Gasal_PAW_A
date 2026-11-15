@@ -12,7 +12,7 @@ if (isset($_GET['id'])) {
         if ($jumlah_terpakai > 0) {
             echo "<script>
                     alert('GAGAL MENGHAPUS! Barang ini tidak bisa dihapus karena sedang digunakan pada {$jumlah_terpakai} riwayat transaksi.');
-                    window.location.href = 'index_barang.php'; // Ubah sesuai nama file tabel barang Anda
+                    window.location.href = 'index_barang.php';
                   </script>";
         } else {
             $stmtHapus = $DBH->prepare("DELETE FROM barang WHERE id = ?");
@@ -20,7 +20,7 @@ if (isset($_GET['id'])) {
 
             echo "<script>
                     alert('Sukses! Data barang berhasil dihapus.');
-                    window.location.href = 'index_barang.php'; // Ubah sesuai nama file tabel barang Anda
+                    window.location.href = 'index_barang.php';
                   </script>";
         }
 
