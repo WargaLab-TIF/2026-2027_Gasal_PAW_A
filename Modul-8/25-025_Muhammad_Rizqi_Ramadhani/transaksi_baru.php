@@ -59,7 +59,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $stmt = $conn->prepare("UPDATE barang SET stok = stok - ? WHERE id = ?");
         $stmt->execute([$qty, $barangId]);
 
-        header("Location: data.php");
+        header("Location: transaksi.php");
         exit;
     }
 }
