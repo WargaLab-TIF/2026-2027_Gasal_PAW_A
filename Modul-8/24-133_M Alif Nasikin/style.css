@@ -1,0 +1,45 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, Helvetica, sans-serif; background: #f4f6f9; color: #222; }
+
+/* ---------- Navbar ---------- */
+.navbar { display: flex; justify-content: space-between; align-items: center;
+          background: #1b4f9c; padding: 0 20px; }
+.navbar .kiri { display: flex; align-items: center; }
+.navbar ul { list-style: none; margin: 0; padding: 0; display: flex; }
+.navbar a { display: block; color: #fff; text-decoration: none; padding: 15px 14px; font-size: 14px; }
+.navbar a:hover { background: #163f7c; }
+.navbar .brand { font-weight: bold; font-size: 16px; margin-right: 10px; }
+
+.dropdown { position: relative; }
+.submenu { display: none; position: absolute; top: 100%; left: 0; min-width: 170px;
+           background: #fff; box-shadow: 0 4px 10px rgba(0,0,0,.25); z-index: 10; flex-direction: column; }
+.kanan .submenu { left: auto; right: 0; }
+.dropdown:hover .submenu, .dropdown:focus-within .submenu { display: flex; }
+.navbar .submenu a { color: #222; }
+.navbar .submenu a:hover { background: #e8eef8; }
+
+/* ---------- Konten ---------- */
+.isi { max-width: 900px; margin: 25px auto; background: #fff; padding: 20px 25px;
+       border-radius: 6px; box-shadow: 0 1px 4px rgba(0,0,0,.1); }
+table { border-collapse: collapse; margin-top: 12px; }
+th, td { border: 1px solid #bbb; padding: 8px 12px; text-align: left; }
+th { background: #f0f0f0; }
+
+label { display: block; margin-top: 12px; font-weight: bold; }
+input, select { width: 100%; max-width: 320px; padding: 7px; border: 1px solid #aaa; border-radius: 4px; }
+button, .tombol { display: inline-block; background: #1b4f9c; color: #fff; border: 0; padding: 8px 16px;
+                  border-radius: 4px; cursor: pointer; text-decoration: none; margin-top: 14px; font-size: 14px; }
+form.inline { display: inline; }
+.link-hapus { background: none; color: #c0392b; padding: 0; margin: 0 0 0 8px; text-decoration: underline; }
+
+/* ---------- Pesan ---------- */
+.alert { padding: 10px 14px; border-radius: 4px; margin-bottom: 14px; }
+.alert.danger  { background: #fde8e8; color: #9b1c1c; border: 1px solid #f5b5b5; }
+.alert.success { background: #e3f6e8; color: #17692d; border: 1px solid #a8dfb8; }
+.alert.info    { background: #e6f0fb; color: #1b4f9c; border: 1px solid #b3cdee; }
+
+/* ---------- Halaman login ---------- */
+.login-box { max-width: 340px; margin: 80px auto; background: #fff; padding: 25px;
+             border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,.15); }
+.login-box h2 { margin-top: 0; }
+.login-box input { max-width: 100%; }
