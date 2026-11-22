@@ -1,0 +1,6 @@
+<?php
+
+function sanitazion($input)
+{
+  return htmlspecialchars(trim((string) $input), ENT_QUOTES, "UTF-8");
+}
