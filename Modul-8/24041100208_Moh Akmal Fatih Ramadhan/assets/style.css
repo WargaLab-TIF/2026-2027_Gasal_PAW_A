@@ -1,0 +1,239 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+    color: #202938;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    background: #145da0;
+    padding: 15px 24px;
+    color: white;
+}
+
+.navbar a,
+.dropdown > span {
+    color: white;
+    text-decoration: none;
+}
+
+.brand {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.nav-user {
+    margin-left: auto;
+}
+
+.dropdown {
+    position: relative;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 22px;
+    left: 0;
+    min-width: 180px;
+    background: white;
+    box-shadow: 0 4px 12px #0002;
+    z-index: 5;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    display: block;
+    color: #202938;
+    padding: 10px;
+}
+
+.dropdown-content a:hover {
+    background: #eef3f8;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 28px auto;
+    padding: 0 18px;
+}
+
+.panel,
+.card,
+.login-card {
+    background: white;
+    border-radius: 10px;
+    padding: 22px;
+    box-shadow: 0 2px 10px #0000000c;
+    margin-bottom: 18px;
+}
+
+.cards {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.card {
+    min-width: 190px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.card strong {
+    font-size: 28px;
+}
+
+.muted {
+    color: #687386;
+}
+
+.login-page {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 20px;
+}
+
+.login-card {
+    width: min(100%, 390px);
+}
+
+label {
+    display: block;
+    margin: 12px 0 6px;
+    font-weight: 600;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cbd2dc;
+    border-radius: 6px;
+    margin-bottom: 8px;
+}
+
+button,
+.btn {
+    display: inline-block;
+    border: 0;
+    border-radius: 6px;
+    padding: 10px 14px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.primary {
+    background: #145da0;
+    color: white;
+}
+
+.danger {
+    background: #b42318;
+    color: white;
+}
+
+.secondary {
+    background: #e7edf5;
+    color: #202938;
+}
+
+.full {
+    width: 100%;
+    margin-top: 12px;
+}
+
+.alert {
+    padding: 12px;
+    border-radius: 6px;
+    margin: 12px 0;
+}
+
+.error {
+    background: #fee4e2;
+    color: #912018;
+}
+
+.success {
+    background: #dcfae6;
+    color: #17663a;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    margin-top: 16px;
+}
+
+th,
+td {
+    padding: 10px;
+    border: 1px solid #dce1e8;
+    text-align: left;
+}
+
+th {
+    background: #eaf0f7;
+}
+
+.actions {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+.inline {
+    display: inline;
+}
+
+.toolbar {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.toolbar input {
+    max-width: 220px;
+}
+
+.small {
+    font-size: 13px;
+}
+
+.table-wrap {
+    overflow-x: auto;
+}
+
+canvas {
+    max-height: 360px;
+}
+
+@media print {
+    .navbar,
+    .toolbar button,
+    .toolbar a {
+        display: none;
+    }
+
+    body {
+        background: white;
+    }
+}
