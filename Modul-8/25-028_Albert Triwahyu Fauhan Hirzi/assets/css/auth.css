@@ -1,0 +1,260 @@
+* {
+  box-sizing: border-box;
+}
+button,
+input,
+select,
+textarea {
+  font-family: Arial,sans-serif;
+}
+body {
+  margin: 0;
+  font: 15px Arial,sans-serif;
+  color: #333;
+  background: #f4f6f9;
+}
+.topbar {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  padding: 14px 5%;
+  background: #07518b;
+  color: #fff;
+}
+.topbar a {
+  color: #fff;
+  text-decoration: none;
+}
+.brand {
+  font-weight: bold;
+  font-size: 18px;
+}
+.navlinks {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex: 1;
+  flex-wrap: wrap;
+}
+.nav-dropdown {
+  position: relative;
+}
+.nav-dropdown-toggle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #fff;
+  font: inherit;
+  cursor: pointer;
+  list-style: none;
+}
+.nav-dropdown-toggle::-webkit-details-marker {
+  display: none;
+}
+.nav-dropdown-menu {
+  display: none;
+  position: absolute;
+  z-index: 5;
+  top: 100%;
+  left: -12px;
+  min-width: 175px;
+  padding: 7px;
+  background: #fff;
+  box-shadow: 0 8px 20px #16324d12;
+  border-radius: 5px;
+}
+.nav-dropdown[open] .nav-dropdown-menu {
+  display: block;
+}
+.nav-dropdown-menu a {
+  display: block;
+  padding: 10px 12px;
+  color: #333;
+  white-space: nowrap;
+}
+.nav-dropdown-menu a:hover {
+  background: #f7fcff;
+  color: #07518b;
+}
+.nav-dropdown:hover .nav-dropdown-menu,
+.nav-dropdown:focus-within .nav-dropdown-menu {
+  display: block;
+}
+.account {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.page {
+  max-width: 1100px;
+  margin: 32px auto;
+  padding: 0 20px;
+}
+.panel,.login-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 26px;
+  box-shadow: 0 5px 20px #16324d12;
+}
+.login-page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+}
+.login-card {
+  width: min(100%,420px);
+}
+.login-card h1 {
+  margin-top: 0;
+  color: #4a7791;
+  font-size: 24px;
+  font-weight: normal;
+}
+.login-card p {
+  color: #64748b;
+}
+.login-card form,.login-card label {
+  display: grid;
+  gap: 8px;
+}
+.login-card form {
+  gap: 18px;
+}
+.login-card input {
+  padding: 11px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+.login-card button {
+  padding: 12px;
+  background: #07518b;
+  border: 0;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+.login-card small {
+  display: block;
+  margin-top: 18px;
+  color: #64748b;
+}
+.error {
+  padding: 10px;
+  background: #f8d7da;
+  color: #842029;
+  border-radius: 6px;
+  margin: 12px 0;
+}
+.page-banner {
+  background: #f8f9fa;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 32px max(20px,calc((100% - 1100px)/2));
+}
+.page-banner h1 {
+  margin: 5px 0 0;
+  color: #4a7791;
+  font-size: 24px;
+  font-weight: normal;
+}
+.eyebrow {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #64748b;
+  font-weight: bold;
+}
+.table-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 14px;
+  padding-bottom: 10px;
+}
+.table-heading h2,.container-title {
+  margin: 5px 0 0;
+  color: #4a7791;
+  font-size: 24px;
+  font-weight: normal;
+}
+.table-heading span {
+  font-size: 12px;
+  color: #64748b;
+}
+.table-wrap {
+  overflow-x: auto;
+  border: 1px solid #e0e0e0;
+  background: #fff;
+}
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 14px;
+}
+.data-table thead {
+  background: #e1f5fe;
+  border-bottom: 1px solid #e0e0e0;
+  color: #333;
+  font-size: 14px;
+  font-weight: bold;
+}
+.data-table th,.data-table td {
+  padding: 12px 15px;
+  white-space: nowrap;
+}
+.data-table tbody tr {
+  border-bottom: 1px solid #f7fcff;
+}
+.data-table tbody tr:last-child {
+  border-bottom: 0;
+}
+.data-table tbody tr:hover {
+  background: #f8f9fa;
+}
+.row-number {
+  font-family: Arial,sans-serif;
+  font-weight: bold;
+  color: #64748b;
+}
+.mono {
+  font-family: Arial,sans-serif;
+  color: #333;
+}
+.strong {
+  font-weight: bold;
+  color: #333;
+}
+.text-right {
+  text-align: right;
+}
+.empty-state {
+  text-align: center;
+  color: #64748b;
+  padding: 28px!important;
+}
+
+@media (max-width: 680px) {
+  .topbar {
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .navlinks {
+    flex-basis: 100%;
+    gap: 12px;
+  }
+
+  .nav-dropdown-menu {
+    position: static;
+    margin-top: 8px;
+    box-shadow: none;
+  }
+
+  .account {
+    flex-wrap: wrap;
+  }
+}
